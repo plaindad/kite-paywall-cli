@@ -1,0 +1,10 @@
+{
+  "name": "kite-paywall-cli",
+  "version": "0.1.0",
+  "description": "Small CLI for designing and checking Kite x402 paywalls",
+  "type": "module",
+  "bin": { "kite-paywall": "dist/cli.js" },
+  "scripts": { "build": "tsc", "test": "npm run build && node --test test/*.test.js", "check": "npm run build && node dist/cli.js check examples/weather.json" },
+  "engines": { "node": ">=20" },
+  "devDependencies": { "typescript": "^5.9.2", "@types/node": "^24.0.0" }
+}

@@ -1,0 +1,9 @@
+{
+  "resource": "https://api.example.test/v1/weather",
+  "description": "Current weather snapshot",
+  "network": "kite-testnet",
+  "asset": "0x0000000000000000000000000000000000000000",
+  "amount": "0.001",
+  "payTo": "0x02dbBD83A83d86Bc4DBBdcc42f25bC52AeCAC764",
+  "maxTimeoutSeconds": 300
+}
