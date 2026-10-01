@@ -22,3 +22,7 @@ export function validatePaywall(value: unknown): Paywall {
 export function paymentRequired(paywall: Paywall): { status: 402; headers: Record<string, string>; body: Paywall } {
   return { status: 402, headers: { "content-type": "application/json", "x-payment-required": "true" }, body: paywall };
 }
+
+export function describePaywall(paywall: Paywall): string {
+  return `${paywall.resource} → ${paywall.amount} on ${paywall.network} (timeout ${paywall.maxTimeoutSeconds}s)`;
+}
